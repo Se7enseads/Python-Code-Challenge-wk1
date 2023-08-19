@@ -26,7 +26,7 @@ def convert_time_system(hour, minute, period):
             print("Invalid period")
     except TypeError:
         # Handle the case where hour or minute are not numbers.
-        print("Hour or Minute should be numbers")
+        print("hour or Minute should be numbers")
     except AttributeError:
         # Handle error when period is not a string
         print("Period should be a string of either am or pm")
