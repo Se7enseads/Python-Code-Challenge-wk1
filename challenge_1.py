@@ -9,18 +9,20 @@ def convert_time_system(hour, minute, period):
                 print("Invalid Hour or Minute")
             # Convert and format hour to 24-hour format.
             elif hour < 10:
-                print(f"0{hour}{minute:00} hours")
+                print(f"0{hour}{minute:02} hours")
             elif hour == 12:
-                print(f"00{minute:00} hours")
+                print(f"00{minute:02} hours")
+            else:
+                print(f"{hour}{minute:02} hours")
         elif period.lower() == "pm":
             # Check if hour and minute are within valid ranges.
             if hour < 1 or hour > 12 or minute < 0 or minute > 59:
                 print("Invalid Hour or Minute")
             # Convert and format hour to 24-hour format.
             elif hour < 12:
-                print(f"{hour + 12}{minute:00} hours")
+                print(f"{hour + 12}{minute:02} hours")
             else:
-                print(f"{hour}{minute:00} hours")
+                print(f"{hour}{minute:02} hours")
         else:
             # Invalid period input.
             print("Invalid period")
