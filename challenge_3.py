@@ -41,6 +41,3 @@ def solve(string):
 
     # Return the maximum consonant value found in the input string.
     return max_value
-
-
-print(solve("zoxvyp"))
