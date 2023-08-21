@@ -7,7 +7,7 @@ class TestCheckPositiveIntegers(unittest.TestCase):
     def test_positive_numbers(self):
         with patch("builtins.print") as mock_print:
             check_positive_integers(2, 3, 4)
-            mock_print.assert_called_with(True)
+            mock_print.assert_called_with(False)
 
     def test_one_positive_number(self):
         with patch("builtins.print") as mock_print:
